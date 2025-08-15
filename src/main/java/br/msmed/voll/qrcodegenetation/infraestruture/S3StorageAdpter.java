@@ -34,5 +34,7 @@ public class S3StorageAdpter implements StoragePort {
         s3Client.putObject(putObjectAclRequest, RequestBody.fromBytes(fileDate));
 
         return String.format("https://%s.s3.%s.amazonaws.com/%s", bucketName, region, fileName);
+
+        //
     }
 }
